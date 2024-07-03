@@ -13,6 +13,7 @@ samba_cups_server: 'localhost:631'
 samba_load_homes: false
 samba_create_varwww_symlinks: false
 samba_shares_root: '/data'
+samba_manage_directories: true
 samba_shares: "{{ vault_samba_shares }}"
 samba_users: "{{ vault_samba_users }}"
 samba_enable_netbios: true
