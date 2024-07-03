@@ -12,10 +12,9 @@ samba_printer_type: 'cups'
 samba_cups_server: 'localhost:631'
 samba_load_homes: false
 samba_create_varwww_symlinks: false
-samba_shares_root: '/srv/shares'
-samba_shares: []
-samba_users: []
-
+samba_shares_root: '/data'
+samba_shares: "{{ vault_samba_shares }}"
+samba_users: "{{ vault_samba_users }}"
 samba_enable_netbios: true
 samba_wins_support: true
 samba_local_master: true
